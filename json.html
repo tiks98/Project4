@@ -42,7 +42,7 @@ var section = document.querySelector('section');
 
 // Json file on server and request URL
 
-var requestURL = 'https://github.com/tiks98/Project4/blob/master/json.html';
+var requestURL = 'https://tiks98.github.io/Project4/json.html';
 
 // Create a new object
 var request = new XMLHttpRequest();
@@ -124,7 +124,7 @@ function topDeals(jsonObj){
 
 		// Set all property for each element based on JSON
 
-		img.setAttribute('src', 'https://github.com/tiks98/Project4/tree/master/images' + dealsOfDay[i].image);
+		img.setAttribute('src', 'https://tiks98.github.io/Project4/images/' + dealsOfDay[i].image);
 		img.setAttribute('alt', dealsOfDay[i].name);
 
 		h2.textContent = dealsOfDay[i].name;
