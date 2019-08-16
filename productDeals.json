@@ -1,0 +1,47 @@
+{
+	"Head": "",
+	"secondHead": "",
+	"active": true,
+	"topDeals": [
+        {
+            "name": "",
+			"price": ,
+			"description": "",
+			"features": [
+				"",
+				"",
+				"",
+				""
+			],
+			"image": ""
+        },
+           {
+            "name": "",
+			"price": ,
+			"description": "",
+			"features": [
+				"",
+				"",
+				"",
+				""
+			],
+			"image": ""
+        },
+           {
+            "name": "",
+			"price": ,
+			"description": "",
+			"features": [
+				"",
+				"",
+				""
+				
+			],
+			"image": ""
+        }
+	]
+}
+
+
+
+

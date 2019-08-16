@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Application</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+<body>
+
+	<div class="pagewrap">
+		<div class="pagewrap-overlay"></div> 
+		    <div class="content">
+			    <header>
+				<div class="header-content">
+					<h1><span Class="text">Weird Deals</span></h1>
+				</div>
+			    </header>
+
+
+			<section>
+				<form action="json.html" method="post">
+				
+					<p>
+						<label>First Name: 
+						 <input type="text" name="firstname" id ="firstName" placeholder=" Name" required="firstName"> 
+						</label>
+					</p>
+
+					<p>
+						<label>Age: 
+						<input type="number" name="age"  placeholder="Age" min="1" max="100"
+						step="1" required pattern="\d+" id="age">
+					</label>
+					</p>			
+                    
+                    <p>	
+						<label>Location: 
+						<input type="text" name="city"  placeholder="Location" required="locations"
+						id="locations">
+					</label>
+					</p>
+					
+					<p>
+						<label>Email: 
+						<input type="email" name="email" class="form-control" placeholder="Email" id="mail" required>
+					</label>
+					</p>
+				
+                    <p>
+						<input value="submit" name="submit" type="submit" class="submit"></input>
+					</p>
+				</form>
+				
+			</section>
+		</div>
+    </div>
+
+
+
+<script type="text/javascript" src="main.js">
+	
+
+
+
+
+</script>
+</body>
+</html>
