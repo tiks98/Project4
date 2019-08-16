@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Web Application</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Weird Deals</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</head>
 <body>
 
-	<div class="pagewrap">
-		<div class="pagewrap-overlay"></div> 
+	<div class="container">
+	
 		    <div class="content">
 			    <header>
-				<div class="header-content">
-					<h1><span Class="text">Weird Deals</span></h1>
-				</div>
+                        <nav class="navbar navbar-light" style="background-color: blue;">
+                                <span class="navbar-brand mb-0 h1" style="color:white;"> Find Weird Deals Here!</span>
+                              </nav>
 			    </header>
 
 
 			<section>
-				<form action="json.html" method="post">
-				
-					<p>
-						<label>First Name: 
-						 <input type="text" name="firstname" id ="Name" placeholder=" Name" required="Name"> 
-						</label>
-					</p>
+				<h4 class="text-center mt-3 mb-3">Please Enter Your Information below</h1>
+				<form action="weirdDeals.html" method="post">
 
-					<p>
-						<label>Age: 
-						<input type="number" name="age"  placeholder="Age" min="1" max="100"
-						step="1" required pattern="\d+" id="age">
-					</label>
-					</p>			
-                    
-                    <p>	
-						<label>Location: 
-						<input type="text" name="city"  placeholder="Location" required="locations"
-						id="locations">
-					</label>
-					</p>
-					
-					<p>
-						<label>Email: 
-						<input type="email" name="email" class="form-control" placeholder="Email" id="email" required>
-					</label>
-					</p>
+						<div class="form-group">
+
+								<input type="text" name="firstname" id ="firstName" class="form-control" placeholder="Enter Your Name" required="firstName"> 
+
+								
+							  </div>
 				
-                    <p>
-						<input value="submit" name="submit" type="submit" class="submit"></input>
-					</p>
+				<div class="form-group">
+					<input type="number" name="age" class="form-control"  placeholder="Enter Your Age" min="1" max="100"
+					step="1"required pattern="\d+" id="age">
+				</div>
+				
+				<div class="form-group">
+                    
+                    <input type="text" name="city" class="form-control"  placeholder="Enter Your Location" required="locations"
+					id="locations">
+				</div>
+					
+				<div class="form-group">
+					<input type="email" name="email" class="form-control" placeholder="Enter Your Email" id="mail" required="email">
+				</div>
+				
+					<input value="submit" name="submit" type="submit" class="submit btn btn-secondary font-weight-bolder btn-lg" style="background-color: blue;"></input>
+			
 				</form>
 				
 			</section>
 		</div>
-    </div>
-
-
-
-<script type="text/javascript" src="main.js">
+	</div>
 	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 
 
-
+<script type="text/javascript" src="main.js" async>
 </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
-var Name = document.getElementById("Name");
+var firstName = document.getElementById("firstName");
 var age = document.getElementById("age");
 var locations = document.getElementById("locations");
-var email = document.getElementById("email");
+var email = document.getElementById("mail");
 
 
 
@@ -10,7 +10,7 @@ var email = document.getElementById("email");
 email.addEventListener("input", function (event) {
 
    if(emial.validity.typeMismatch){
-    email.setCustomValidity("this@email.com");
+    email.setCustomValidity("user123@example.com");
 } else {
   email.setCustomValidity("");
 }
@@ -21,7 +21,7 @@ email.addEventListener("invalid", () => {
 
   
   if(email.value === ""){
-    email.setCustomValidity(" Enter your email address here");
+    email.setCustomValidity("Enter Your Email");
   } else {
     email.setCustomValidity("");
   }
@@ -31,13 +31,13 @@ email.addEventListener("invalid", () => {
 
 
 
-Name.addEventListener("invalid", () => {
+firstName.addEventListener("invalid", () => {
 
  
-  if(Name.value === ""){
-    Name.setCustomValidity(" Please enter your name here");
+  if(firstName.value === ""){
+    firstName.setCustomValidity(" Enter Your Name");
   } else {
-    Name.setCustomValidity("");
+    firstName.setCustomValidity("");
   }
  
 });
@@ -46,7 +46,7 @@ locations.addEventListener("invalid", () => {
 
   
   if(locations.value === ""){
-    locations.setCustomValidity(" Please enter location here");
+    locations.setCustomValidity("Enter Your Location");
   } else {
     locations.setCustomValidity("");
   }
@@ -58,7 +58,7 @@ age.addEventListener("invalid", () => {
 
   
   if(age.value === ""){
-    age.setCustomValidity("Enter select your age");
+    age.setCustomValidity("Enter Your Age");
   } else {
     age.setCustomValidity("");
   }
